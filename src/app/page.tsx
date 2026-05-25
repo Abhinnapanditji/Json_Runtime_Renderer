@@ -102,7 +102,7 @@ export default function Page() {
     }
 
     return (
-        <div className="min-h-screen bg-[#0b0f14] text-gray-100 p-6">
+        <div className="min-h-screen bg-[#0b0f14] text-gray-100 p-3 sm:p-6">
 
             {/* Header */}
             <div className="mb-6">
@@ -115,10 +115,10 @@ export default function Page() {
             </div>
 
             {/* Layout */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
                 {/* LEFT: Editor */}
-                <div className="bg-[#111827] border border-gray-800 rounded-xl p-4 flex flex-col">
+                <div className="order-last lg:order-none bg-[#111827] border border-gray-800 rounded-xl p-4 min-w-0">
 
                     <div className="flex justify-between items-center mb-3">
                         <h2 className="font-semibold text-gray-700">
@@ -146,7 +146,7 @@ export default function Page() {
                 </div>
 
                 {/* RIGHT: Preview */}
-                <div className="bg-[#111827] border border-gray-800 rounded-xl p-4">
+                <div className="order-first lg:order-none bg-[#111827] border border-gray-800 rounded-xl p-4 min-w-0">
 
                     <h2 className="font-semibold text-gray-700 mb-3">
                         Live Preview

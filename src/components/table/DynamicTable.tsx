@@ -11,8 +11,8 @@ export function DynamicTable({ columns, data }: any) {
     }
 
     return (
-        <div className="overflow-hidden rounded-lg border border-gray-800 bg-[#111827]">
-            <table className="w-full text-sm text-gray-200">
+        <div className="overflow-x-auto">
+            <table className="min-w-full text-sm text-gray-200">
                 <thead>
                 <tr>
                     {safeColumns.map((col: string) => (

@@ -11,7 +11,7 @@ export function DynamicForm({ fields }: any) {
 
                     <input
                         type={field?.type ?? "text"}
-                        className="w-full bg-[#0b0f14] border border-gray-700 text-gray-200 rounded-md p-2"
+                        className="w-full text-sm bg-[#0b0f14] border border-gray-700 text-gray-200 rounded-md p-2"
                     />
                 </div>
             ))}
