@@ -16,7 +16,7 @@ const FormProps = z.object({
 
 const TableProps = z.object({
     columns: z.array(z.string()),
-    data: z.array(z.record(z.any())),
+    data: z.array(z.record(z.string(), z.any())),
 })
 
 const ComponentSchema = z.discriminatedUnion("type", [
